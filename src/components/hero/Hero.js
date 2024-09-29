@@ -1,6 +1,8 @@
 import React from 'react'
 import "./hero.css"
 import { motion } from "framer-motion"
+import meImage from './me.png';
+
 
 const textVariants = {
     initial: {
@@ -31,8 +33,8 @@ function Hero() {
         </motion.div>
         </div>
 
-        <div className="imagecon">
-            <img src="/me.png" />
+        <div className="imagecontainer">
+            <img src={meImage} />
         </div>
       
     </div>

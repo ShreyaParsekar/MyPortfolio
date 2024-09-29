@@ -1,6 +1,9 @@
 import React from 'react'
 import "./navbar.css"
 import { motion } from "framer-motion"
+import githubImage from './github.png';
+import instagramImage from './instagram.png';
+import linkedinImage from './linkedin.png';
 
 function Navbar() {
   return (
@@ -15,13 +18,13 @@ function Navbar() {
         SHREYA PARSEKAR
         </motion.span>
       <div className="socialLinks">
-        <a href="#"><img src="github.png" width="25" height="25" /></a>
-        <a href="#"><img src="instagram.png" width="40" height="30"/></a>
-        <a href="#"><img src="linkedin.png"  width="25" height="25"/></a>
+        <a href="https://github.com/ShreyaParsekar" target="_blank"><img src={githubImage} width="25" height="25" alt="" /></a>
+        <a href="#"><img src={instagramImage} width="55" height="40"/></a>
+        <a href="#"><img src={linkedinImage}  width="25" height="25"/></a>
       </div>
       </div>
     </div>
   )
 }
-
+  
 export default Navbar
